@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>HI MAIN</h1>
-</body>
+    <div class="navbar">
+        <h1 class="logo">SEEK</h1>
+        <a href="#" class="active">Home</a>
+        <a href="#">My Post</a>
+        <a href="#">My Application</a>
+        <a href="#" class="profile" onmouseover="changeImage(this,'hovered')"><img src="asset/hover_user.png" alt="user_img" class="user_img"></a>
+        <a href="#" class="logout">Logout</a>
+    </div>
+
+    <!-- sidebar -->
+    <nav>
+        <div class="left-buttons">
+            <a href="#">Sports</a>
+            <a href="#">Coding</a>
+            <a href="#">Games</a>
+            <a href="#">Learning</a>
+            <a href="#">Travels</a>
+            <a href="#" class="last_button">Cooking</a>
+        </div>
+    </nav>
+
+    <!-- main -->
+        <div class="create_post">
+            <img src="asset/edit.png" alt="edit" class="edit">
+            <h2 class="post">Create your post</h2>
+        </div>
+
+        <div class="postinfeed">
+            <h3 class="name">Nasit Phalunchai</h3>
+        </div>
 </html>
