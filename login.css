@@ -34,6 +34,9 @@ h1 {
   font-size: 60px;
   text-align: center;
   color: white;
+
+  /* change font here*/
+  /* font-family: ; */
 }
 .login_info {
   text-align: center;
@@ -60,18 +63,6 @@ h1 {
   color: #001F3F;
   background-color: #69D3EA;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 .login {
   display: flex;
   text-align: center;
@@ -121,7 +112,7 @@ h1 {
   
   .input-data input:focus ~ label,
   .input-data input:valid ~ label {
-    transform: translateY(-25px); /* Move label above input field */
+    transform: translateY(-25px);
     font-size: 14px;
     color: #49C7E3;
   }
@@ -153,7 +144,5 @@ h1 {
     color: white;
   }
   a{
-    color: whitesmoke;
+    color: transparent;
   }
-  
-  
