@@ -24,8 +24,7 @@ body {
   /* background-color: #176b87; */
 }
 .login_img {
-  width: 520px;
-  height: 490px;
+  height: 100%;
   display: grid;
 }
 h1 {
