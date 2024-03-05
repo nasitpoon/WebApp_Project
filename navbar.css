@@ -55,8 +55,8 @@
 
 a.profile,
 a.logout{
-    position: relative;
-    left: 50%;
+    position: fixed;
+    right: 0;
 }
 
 
