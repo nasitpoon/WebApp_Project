@@ -31,10 +31,6 @@ body{
   background-attachment: fixed;
   /* background-color: #176b87; */
 }
-.login_img {
-  height: 100%;
-  display: grid;
-}
 .login_container
 {
   display: flex;
