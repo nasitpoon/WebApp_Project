@@ -12,6 +12,7 @@ body{
     overflow: hidden;
     display: flex;
     align-items: center;
+    height: 70px;
     /* background-repeat: no-repeat;
     background-attachment: fixed; */
 }
@@ -84,7 +85,7 @@ nav {
     top: 0;
     left: 0;
     padding: 0;
-    padding-top: 4.3%;
+    padding-top: 70px;
 }
 
 .left-buttons a {
@@ -116,14 +117,15 @@ nav {
     width: 780px;
     height: 95px;
     border-radius: 30px;
-    margin: 0 auto;
+    margin-top: 50px;
     position: relative;
     top: 40px;
 }
 
 .post {
-    text-align: center;
     margin: 0;
+    position: relative;
+    right: 220px;
 }
 
 .edit {
@@ -132,17 +134,114 @@ nav {
     position: relative;
     right: 250px;
 }
-.postinfeed{
+.post-in-feed{
     border: solid 2px black;
     width: 780px;
     height: 480px;
-    display: contents;
+    display: flex;
     justify-content: center;
+    position: relative;
+    top: 20%;
+    margin-top: 5%;
+    border-radius: 20px;
+    margin-bottom: 8%;
 }
 .create_post {
-    background-color: beige; /* Change the background color of the create_post div */
+    background-color: beige;
+}
+.post-in-feed {
+    background-color: beige;
+}
+.main-feed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name{
+    font-size: 35px;
+    position: absolute;
+    top: 7%;
+    left: 6%;
+    margin: 0;
+}
+.member{
+    font-size: 20px;
+    position: absolute;
+    top: 18%;
+    left: 6%;
+    margin: 0;
+}
+.activity_pic{
+    width: 280px;
+    height: 225px;
+    position: absolute;
+    left: 6%;
+    top: 28%;
+    display: flex;
+    flex: auto;
+}
+.img_activity{
+    width: 100%;
+    height: 100%;
+}
+.end_post{
+    font-size: 25px;
+    color: green;
+    position: absolute;
+    top: 82%;
+    left: 6%;
+}
+.type-activity{
+    font-size: 35px;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+}
+.description{
+    border: solid 2px black;
+    width: 305px;
+    height: 175px;
+    display: flex;
+    flex-direction: row;
 }
 
-.main .postinfeed {
-    background-color: #ffffff; /* Change the background color of the postinfeed div */
-}
+.box {
+    width: 780px;
+    height: 480px;
+    background: rgba(255, 255, 255, 1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: beige;
+  }
+  .upper {
+    text-align: left;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .lower {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  p{
+    margin: 10px;
+    font-family:verdana;
+    color: grey;
+  }
+  button{
+    border: none;
+    background: none;
+    width: 20%; 
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .activity-info{
+    position: relative;
+    right: 25px;
+  }

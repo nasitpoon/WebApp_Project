@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="navbar">
+    <nav class="navbar">
         <h1 class="logo">SEEK</h1>
         <a href="#" class="active">Home</a>
         <a href="#">My Post</a>
         <a href="#">My Application</a>
         <a href="#" class="profile" onmouseover="changeImage(this,'hovered')"><img src="asset/hover_user.png" alt="user_img" class="user_img"></a>
         <a href="#" class="logout">Logout</a>
-    </div>
+    </nav>
 
     <!-- sidebar -->
     <nav>
@@ -30,12 +30,47 @@
     </nav>
 
     <!-- main -->
+    <div class="main-feed">
         <div class="create_post">
             <img src="asset/edit.png" alt="edit" class="edit">
             <h2 class="post">Create your post</h2>
         </div>
 
-        <div class="postinfeed">
+        <div class="post-in-feed">
             <h3 class="name">Nasit Phalunchai</h3>
+            <h3 class="member">Member 0/10</h3>
+            <div class="activity_pic">
+                <img src="asset/IMG_7499.jpg" alt="" class="img_activity">
+            </div>
+            <h3 class="end_post">10 March 2024</h3>
+            <h2 class="type-activity">Travel: Eating at CTW</h2>
+            <div class="description">
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui commodi quis facere neque, vitae eligendi voluptate facilis veniam quam consequuntur.</h4>
+            </div>
         </div>
+
+        <div class="box">
+            <div class="upper">
+              <p style="font-size: 30px; font-weight: bold;">TOPIC</p>
+              <p style="font-size: 30px; font-weight: bold;">Type of activity</p>
+            </div>
+          
+            <div class="upper">
+              <p>Available (0/10)</p>
+              <p>DD/MM/YY</p>
+              <p>Place</p>
+            </div>
+          
+            <div class="upper">
+              <img src="asset/IMG_7499.jpg" width="45%" height="200" style="margin-left: 10px;">
+              <div style="width: 45%; color: gray; background-color: white;" class="activity-info">The cat (Felis catus), commonly referred to as the domestic cat or house cat, is the only domesticated species in the family Felidae. Recent advances in archaeology and genetics have shown that the domestication of the cat occurred </div>
+            </div>
+          
+            <div class="upper">
+              <p style="color: red;">Close DD/MM/YY</p>
+              <p>post by (name)</p>
+              <button id="butt" onmouseover="buttonup()" onmouseout="buttondown()">Join</button>
+            </div>
+          </div>
+    </div>
 </html>
