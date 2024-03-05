@@ -11,6 +11,7 @@ body {
 }
 .img_box {
   width: 50%;
+  overflow: hidden;
 }
 .register_box {
   display: flex;
