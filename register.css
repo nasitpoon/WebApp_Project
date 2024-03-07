@@ -11,6 +11,7 @@ body {
 }
 .img_box {
   width: 50%;
+  overflow: hidden;
 }
 .register_box {
   display: flex;
@@ -21,10 +22,6 @@ body {
   background-image: url(asset/bg.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-.login_img {
-  height: 100%;
-  display: grid;
 }
 h1 {
   display: flex;

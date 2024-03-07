@@ -14,6 +14,7 @@ body{
 }
 .img_box {
   width: 50%;
+  overflow: hidden;
 }
 .login_topic{
   font-size:50px;
@@ -30,10 +31,6 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   /* background-color: #176b87; */
-}
-.login_img {
-  height: 100%;
-  display: grid;
 }
 .login_container
 {
@@ -186,3 +183,12 @@ body{
     text-align: center;
     margin-top: 0;
   }
+
+@media only screen and (max-width: 600px) {
+  .login_box {
+    width: 100%;
+  }
+  .img_box {
+    display: none;
+  }
+}
