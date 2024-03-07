@@ -1,0 +1,98 @@
+body{
+    background: url('https://ak-d.tripcdn.com/images/0102e120008a6v60y242A.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #31304D;
+    font-family: 'jura';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+body > div {
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+    width: 100%;
+}
+nav {
+    width: 100%;
+    text-align: center;
+    text-shadow: none;
+    line-height: 60px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0 20px;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+nav a:hover{
+    background-color: rgb(214, 214, 214);
+}
+
+.icon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+}
+
+.icon img {
+    width: 100px;
+    height: 40px;
+    vertical-align: middle;
+}
+.logout {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0 20px;
+    line-height: 60px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.login{
+    position: fixed;
+    top: 0;
+    right: 7%;
+    padding: 0 20px;
+    line-height: 60px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+span{
+    font-size: 250%;
+}
+span:hover{
+    background-color: rgb(0, 0, 0,0.5);
+}
+.logo {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-style: bold;
+    font-family: "Kanit-Bold", sans-serif;
+    color: #31304D;
+}
+
+.welcometext {
+    font-size: 700%; 
+    margin:5% 0 0 0;
+}
+
+.sub_welcome{
+    font-size: 200%; 
+    margin:0;
+}

@@ -1,0 +1,36 @@
+body{
+    background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+  }
+  .box {
+    width: 600px;
+    height: 350px;
+    background: rgba(255, 255, 255, 1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-style: solid;
+  }
+  .upper {
+    text-align: left;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .lower {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  p{
+    margin: 10px;
+    font-family:verdana;
+    color: grey;
+  }
+  button{
+    border: none;
+    background: none;
+    width: 20%; 
+    font-weight: bold;
+    font-size: 30px;
+  }

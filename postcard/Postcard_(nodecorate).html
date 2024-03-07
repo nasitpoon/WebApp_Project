@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box with Text</title>
+<link rel="stylesheet" href="Postcard_(nodecorate).css">
+</head>
+<body>
+
+<div class="box">
+  <div class="upper">
+    <p style="font-size: 30px; font-weight: bold;">TOPIC</p>
+    <p style="font-size: 30px; font-weight: bold;">Type of activity</p>
+  </div>
+
+  <div class="upper">
+    <p>Available (0/10)</p>
+    <p>DD/MM/YY</p>
+    <p>Place</p>
+  </div>
+
+  <div class="upper">
+    <img src="https://i.redd.it/eggwick-x-valorant-themed-gaming-room-took-around-8-9-to-v0-f9rm6rph05bb1.png?width=3200&format=png&auto=webp&s=05843e489703dc6e30bb257e6d5eb49a4e22d6c8" width="45%" height="200" style="margin-left: 10px;">
+    <div style="width: 45%; color: gray;">The cat (Felis catus), commonly referred to as the domestic cat or house cat, is the only domesticated species in the family Felidae. Recent advances in archaeology and genetics have shown that the domestication of the cat occurred </div>
+  </div>
+
+  <div class="upper">
+    <p style="color: red;">Close DD/MM/YY</p>
+    <p>post by (name)</p>
+    <button id="butt" onmouseover="buttonup()" onmouseout="buttondown()">Join</button>
+  </div>
+</div>
+
+<script>
+  function buttonup() {
+    document.getElementById("butt").style.color = "red";
+  }
+  function buttondown() {
+    document.getElementById("butt").style.color = "grey";
+  }
+</script>
+</body>
+</html>
+
