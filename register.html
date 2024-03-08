@@ -55,7 +55,7 @@
 </html>
 
 <script>
-  const worker = new Worker('loop_img.js');
+  const worker = new Worker('imgWorker.js');
   worker.onmessage = function(event) {
     document.getElementById('loop_img').src = event.data;
   };

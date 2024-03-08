@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="login.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura&display=swap">
-    <link rel="stylesheet" href="loop_img.css" />
     <title>Login</title>
   </head>
   <body>
@@ -12,15 +11,18 @@
     <div class="container">
 
       <div class="img_box">
-        <img class="left_img" id="loop_img">
+        <div class="quote" id="wQuote">
+        </div>
+        <img class="login_img" id="mainImage">
       </div>
+      
 
       <div class="login_box">
 
           <div class = "login_container">
 
                   <div class="row1">
-                    <h1 class = "login_topic">Log in</h1>
+                    <h1 class = "login_topic">Login</h1>
                     <br>
                     <br>
                   </div>
@@ -44,9 +46,9 @@
                       <button class="login_button">Login</button>
                     </a>
                   </div>
-                  <p>------------- or -------------</p>
                   <div class="create_acc">
                     <a href="register.html">
+                      <br><br>
                       <h2>Create Account</h2>
                     </a>
                   </div>
@@ -69,6 +71,7 @@
 <script>
   const worker = new Worker('loop_img.js');
   worker.onmessage = function(event) {
-    document.getElementById('loop_img').src = event.data;
+    document.getElementById('mainImage').src = event.data.url;
+    document.getElementById('wQuote').textContent = event.data.quote;
   };
 </script>

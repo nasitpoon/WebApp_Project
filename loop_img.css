@@ -3,3 +3,7 @@
     min-width: 100%;
     display: grid;
   }
+  .img_box img {
+    transition: opacity 0.1s ease;
+}
+

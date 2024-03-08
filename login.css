@@ -4,44 +4,112 @@ body {
   padding: 0px;
 }
 body{
-  font-family: 'Jura', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
   height: 100%;
 }
 .img_box {
-  width: 50%;
+  display: flex;
+  flex: 1;
+  position: relative; /* Establish a positioning context */
+  width: 100%;
+  height: 100vh; /* Set height to viewport height */
   overflow: hidden;
 }
+
+.quote {
+  display: flex;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-family: serif;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 5px 10px rgba(2, 65, 255, 1);
+}
+
+@media (max-width: 1200px) {
+  .quote {
+    display: flex;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-family: serif;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 10px rgba(2, 65, 255, 1);
+  }
+}
+
+@media (max-width: 900px) {
+  .quote {
+    display: flex;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-family: serif;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 0px;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 10px rgba(2, 65, 255, 1);
+  }
+  .login_container
+  {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    width: 300px;
+    margin-bottom: 0;
+    box-shadow: 10px 10px 60px #252525;
+  }
+}
+
 .login_topic{
-  font-size:50px;
+  color: #252525;
+  font-size:40px;
   margin-top: 30;
   margin-bottom: 0;
 }
 .login_box {
+  position: absolute;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
-  width: 50%;
   height: 100%;
-  background-image: url(asset/bg.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* background-color: #176b87; */
+  background: linear-gradient(to top, rgb(97, 144, 232), rgba(65, 134, 225, 0) 50%, rgba(245, 20, 13, 0.2));
+}
+.login_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .login_container
 {
   display: flex;
+  margin-right: 10%;
   flex-direction: column;
-  left: 10%;
   border-radius: 20px;
-  background-color: white;
-  width: 300px;
+  background-color: #f5f5f5;
+  width: 400px;
   margin-bottom: 0;
-  box-shadow: 10px 10px;
+  box-shadow: 10px 10px 60px #252525;
 }
 .login_container.row1 {
   position: fixed;
@@ -49,7 +117,7 @@ body{
   justify-content: center;
   font-size: 60px;
   text-align: center;
-  color: white;
+  color: #f5f5f5;
 }
 
 .login_topic {
@@ -69,7 +137,9 @@ body{
   bottom: 10px;
 }
 .login_button {
-  border: solid 2px white;
+  border: solid 2px #f5f5f5;
+  background-color: #c1d8ef;
+  color: #252525;
   width: 125px;
   height: 44px;
   border-radius: 60px;
@@ -80,8 +150,8 @@ body{
   font-size: 15px;
 }
 .login_button:hover{
-  color: #001F3F;
-  background-color: #69D3EA;
+  color: #252525;
+  background-color: rgb(126, 226, 244);
 }
 .login {
   display: flex;
@@ -107,7 +177,7 @@ body{
   padding: 10px;
   margin-bottom: 20px;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #727171;
   background-color: transparent;
   outline: none;
 }
@@ -146,9 +216,9 @@ body{
   .input-data label {
     position: absolute;
     bottom: 40px;
-    left: 57px;
+    left: 107px;
     font-size: 16px;
-    color: #ccc;
+    color: #727171;
     transition: all 0.3s ease;
   }
   
@@ -159,7 +229,7 @@ body{
     width: 200px;
     left: 50px;
     right: 50px;
-    color: white;
+    color: #f5f5f5;
   }
   .input-data input:focus ~ .underline:before,
   .input-data input:valid ~ .underline:before {
@@ -169,26 +239,30 @@ body{
   .login_container h2{
     display: flex;
     justify-content: center;
-    color: black;
+    color: #252525;
     position: relative;
     bottom: 20px;
   }
   a{
     color: transparent;
   }
+  .create_acc {
+    font-size: 10px;
+  }
   .create_acc h2:hover{
-    color: #9bde8a;
+    color: #1d099d;
   }
   p{
     text-align: center;
     margin-top: 0;
   }
 
-@media only screen and (max-width: 600px) {
-  .login_box {
-    width: 100%;
+
+  @media only screen and (max-width: 600px) {
+    .login_box {
+      width: 100%;
+    }
+    .img_box {
+      display: none;
+    }
   }
-  .img_box {
-    display: none;
-  }
-}
