@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: wheat;
+  background-color: #2a2d2f;
 }
 .navbar {
   background-color: #f0ece5;
@@ -113,6 +113,10 @@ nav {
   margin-top: 50px;
   position: relative;
   top: 40px;
+}
+
+.create_post:hover{
+  cursor: pointer;
 }
 
 .post {

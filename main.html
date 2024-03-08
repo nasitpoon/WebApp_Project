@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="createpost-popup.css">
 </head>
 <body>
     <nav class="navbar">
@@ -13,7 +13,7 @@
         <a href="#" class="active">Home</a>
         <a href="#">My Post</a>
         <a href="#">My Application</a>
-        <a href="#" class="profile" onmouseover="changeImage(this,'hovered')"><img src="asset/hover_user.png" alt="user_img" class="user_img"></a>
+        <a href="#" class="profile"></a>
         <a href="#" class="logout">Logout</a>
     </nav>
 
@@ -28,15 +28,16 @@
             <a href="#" class="last_button">Cooking</a>
         </div>
     </nav>
-
     <!-- main -->
     <div class="main-feed">
         <div class="create_post" id="create-post">
             <img src="asset/edit.png" alt="edit" class="edit">
             <h2 class="post">Create your post</h2>
-            <button class="create-post-button"></button>
         </div>
-        
+
+                
+
+
         <div class="box">
             <div class="upper">
               <p class="topic">TOPIC</p>
@@ -61,7 +62,81 @@
             </div>
           </div>
     </div>
-    <script>
 
+
+
+    <!-- modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <br><br>
+
+        <h1 class="header">Draft</h1>
+        <div class="draft-container">
+          <div class="label">
+            <p class="popup-label">Topic</p>
+            <p class="popup-label">Type of Activity</p>
+            <p class="popup-label">Number of people</p>
+            <p class="popup-label">Close Post</p>
+            <p class="popup-label">Image URL</p>
+            <p class="popup-label">Describtion</p>
+          </div>
+
+          <form class="modal-form">
+            <input type="text" class="input-topic" placeholder="Input Topic">
+            <select type="type-activity" class="input-type-of-activity">
+              <option value="Sports" selected>Sports</option>
+              <option value="Coding">Coding</option>
+              <option value="Games">Games</option>
+              <option value="Learning">Learning</option>
+              <option value="Travels">Travels</option>
+              <option value="Cooking">Cooking</option>
+            <input type="text" class="input-number-of-people" placeholder="Input number of people">
+            <input type="datetime-local" class="close-post">
+            <input type="text" class="img-url" placeholder="Image URL">
+            <input type="text" class="describtion" placeholder="Describtion">
+          </form>
+
+        </div><br><br>
+        <div class="post-button-container">
+          <button class="post-button">Post</button>        
+        </div>
+
+        
+
+        </div>
+      
+      </div>
+    
+    </div>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var div_createpost = document.getElementById("create-post");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal 
+      div_createpost.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
     </script>
 </html>
