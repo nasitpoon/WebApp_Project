@@ -9,13 +9,13 @@
 </head>
 <body>
     <nav>
-        <a class="icon"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Seek_Limited_logo.svg/1200px-Seek_Limited_logo.svg.png"></a>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact us</a>
-        <a href="#">Help</a>
-        <a class="logout" href="#">Logout</a>
-        <a class="login" href="#">Login</a>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Seek_Limited_logo.svg/1200px-Seek_Limited_logo.svg.png">
+        <div>
+            <a>Home</a>
+            <a>My Post</a>
+            <a>My Application</a>
+        </div>
+        <a>Profile</a>
     </nav>
     <div class="pf">
         <div class="pic">
@@ -24,15 +24,11 @@
         </div>
         <div class="info">
             <div class="instan">
-                <p class="ininfo">FirstName : xxxxxx</p>
-                <p class="ininfo">LastName : xxxxxxxxxxxx</p>
+                <p class="ininfo">Name : xxxxxx</p>
+                <p class="ininfo">Email : xxxxxxxx@gmail.com</p>
             </div>
             <div class="instan">
-                <p class="ininfo">UserName : xxxxx</p>
                 <p class="ininfo">Password : xxxxxx</p>
-            </div>
-            <div class="instan">
-                <p class="ininfo">PhoneNumber : 081xxxxxxx</p>
             </div>
         </div>
     <div>
@@ -41,14 +37,16 @@
             <span class="close">×</span>
             <h1>Edit profile</h1>
             <form style="display: flex; flex-direction: column;">
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="fname" value=""><br>
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lname" value=""><br>
-                <label for="lname">User Name:</label>
-                <input type="text" id="lname" name="lname" value=""><br>
-                <label for="lname">PhoneNumber:</label>
-                <input type="text" id="lname" name="lname" value="081"><br>
+                <label for="Nnam">Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="Eema">Email:</label>
+                <input type="text" id="Eema" name="Eema"><br>
+                <label for="Cpass">Current Password:</label>
+                <input type="text" id="Cpass" name="Cpass"><br>
+                <label for="Npass">New Password:</label>
+                <input type="text" id="Npass" name="Npass"><br>
+                <label for="Conpass">Confirm Password:</label>
+                <input type="text" id="Conpass" name="Conpass"><br>
                 <input type="submit" value="Submit">
             </form> 
         </div>

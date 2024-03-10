@@ -21,7 +21,9 @@ body > div {
 }
 nav {
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-shadow: none;
     line-height: 60px;
     z-index: 1000;
@@ -42,38 +44,16 @@ nav a:hover{
     background-color: rgb(214, 214, 214);
 }
 
-.icon {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0 20px;
-}
-
-.icon img {
+nav > img {
+    margin-left: 1%;
     width: 100px;
     height: 40px;
-    vertical-align: middle;
 }
-.logout {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 0 20px;
-    line-height: 60px;
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
+
+nav > img:hover {
+    background-color: rgb(214, 214, 214);
 }
-.login{
-    position: fixed;
-    top: 0;
-    right: 7%;
-    padding: 0 20px;
-    line-height: 60px;
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-}
+
 span{
     font-size: 250%;
 }
