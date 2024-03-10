@@ -4,40 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="createpost-popup.css">
+    <link rel="stylesheet" href="main.css">
 </head>
-<body>
-    <nav class="navbar">
-        <h1 class="logo">SEEK</h1>
-        <a href="#" class="active">Home</a>
-        <a href="#">My Post</a>
-        <a href="#">My Application</a>
-        <a href="#" class="profile"></a>
-        <a href="#" class="logout">Logout</a>
+  <body>
+    <nav>
+      <a class="logo"><h1>SEEK</h1></a>
+      <a href="#" class="active">Home</a>
+      <a href="#">My Post</a>
+      <a href="#">My Application</a>
+      <a href="#" class="profile"></a>
+      <a href="#" class="logout">Logout</a>
+      <div class="left-buttons">
+          <a href="#">Sports</a>
+          <a href="#">Coding</a>
+          <a href="#">Games</a>
+          <a href="#">Learning</a>
+          <a href="#">Travels</a>
+          <a href="#" class="last_button">Cooking</a>
+      </div>
     </nav>
 
     <!-- sidebar -->
-    <nav>
-        <div class="left-buttons">
-            <a href="#">Sports</a>
-            <a href="#">Coding</a>
-            <a href="#">Games</a>
-            <a href="#">Learning</a>
-            <a href="#">Travels</a>
-            <a href="#" class="last_button">Cooking</a>
-        </div>
-    </nav>
+
+        
+
+
     <!-- main -->
     <div class="main-feed">
         <div class="create_post" id="create-post">
             <img src="asset/edit.png" alt="edit" class="edit">
             <h2 class="post">Create your post</h2>
         </div>
-
-                
-
-
+        
         <div class="box">
             <div class="upper">
               <p class="topic">TOPIC</p>
@@ -62,9 +61,6 @@
             </div>
           </div>
     </div>
-
-
-
     <!-- modal -->
     <div id="myModal" class="modal">
 
@@ -104,16 +100,14 @@
           <button class="post-button">Post</button>        
         </div>
 
-        
+
 
         </div>
-      
-      </div>
-    
-    </div>
 
+      </div>
+
+    </div>
     <script>
-      // Get the modal
       var modal = document.getElementById("myModal");
 
       // Get the button that opens the modal

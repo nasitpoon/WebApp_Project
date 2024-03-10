@@ -7,73 +7,54 @@
 body {
   background-color: #2a2d2f;
 }
-.navbar {
+nav {
   background-color: #f0ece5;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  height: 70px;
-  /* background-repeat: no-repeat;
-    background-attachment: fixed; */
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #31304d;
+  width: 100%;
   text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  font-size: 24px;
-  position: relative;
-  left: 30%;
-  top: 5%;
-  border-radius: 5%;
+  line-height: 67px;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.navbar a:hover {
+nav a {
+  font-size: 24px;
+  text-decoration: none;
+  padding: 0 35px;
+  display: inline-block;
+  color: #31304d;
+}
+
+nav a:hover {
   color: black;
 }
 
-.user_img {
-  width: 90%;
-  height: 2%;
-}
-.profile {
-  width: 5%;
-}
-
-.navbar h1 {
-  margin-right: 25px;
-  position: relative;
-  left: 6%;
-}
 .logo {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-style: bold;
   font-family: "Kanit-Bold", sans-serif;
   color: #31304d;
-}
-
-a.profile,
-a.logout {
-  position: relative;
-  left: 50%;
-}
-
-/* sidebar */
-nav {
-  background: #ffffff;
-  width: 100%;
-  text-align: center;
-  line-height: 60px;
-  z-index: 1000;
   position: fixed;
   top: 0;
   left: 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  padding: 0 30px;
 }
+
+a.profile {
+  position: fixed;
+  top: 12px;
+  right: 100px;
+}
+
+a.logout {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  padding: 0 20px;
+}
+
+/* sidebar */
 
 .left-buttons {
   position: fixed;
@@ -84,6 +65,7 @@ nav {
 }
 
 .left-buttons a {
+  font-size: 18px;
   font-family: sans-serif;
   display: block;
   padding: 0px 40px;
@@ -96,6 +78,7 @@ nav {
 
 .left-buttons a:hover {
   background-color: #aaa;
+  color: #120061;
 }
 .left-buttons .last_button {
   border-bottom-right-radius: 20px;
@@ -249,23 +232,81 @@ p {
   margin-left: 10px;
 }
 .available{
-    position: relative;
-    right: 30px;
+  position: relative;
+  right: 30px;
 }
 .close-post{
-    color: red;
+  color: red;
 }
 .join-button {
-    border: solid 2px #F9D864;
-    background: #F9D864;
-    border-radius: 10px;
-    width: 45%;
-    font-weight: bold;
-    font-size: 30px;
-    position: relative;
-    left: 55px;
-    box-shadow: 2px 2px 5px;
-  }
+  border: solid 2px #F9D864;
+  background: #F9D864;
+  border-radius: 10px;
+  width: 45%;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  left: 55px;
+  box-shadow: 2px 2px 5px;
+}
 .join-button:hover{
-    cursor: pointer;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  nav {
+    top: 70;
+  }
+  nav a {
+    padding: 0 15px;
+    margin-top: 50px;
+  }
+  .logo {
+    top: -50px;
+  }
+  a.logout {
+    top: -50px;
+    right: 20px;
+  }
+  .create_post {
+    top: 70px;
+  }
+  .post {
+    right: 50px;
+  }
+  .edit {
+    right: 60px;
+  }
+  .left-buttons {
+    display: none;
+  }
+  .main-feed {
+    padding: 10px;
+  }
+  .create_post, .box {
+    width: 100%;
+    padding: 10px;
+  }
+  .activity-img {
+    width: 100%;
+  }
+  .topic {
+    font-size: 22px;
+  }
+  .type-activity {
+    font-size: 22px;
+  }
+  .activity-info {
+    font-size: 18px;
+    width: 100%;
+    right: 0px;
+  }
+  .join-button {
+    width: 35%;
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+  .bottom {
+    left: 0px;
+  }
 }
