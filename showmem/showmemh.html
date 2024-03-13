@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="showmemc.css">
+</head>
+<body>
+<button id="myBtn">Open Modal</button>
+<div id="myModal" class="modalformem">
+  <div class="modalformem-content">
+    <table class="tableformem">
+        <thead>
+            <th class="tablehead">Number</th>
+            <th class="tablehead">Username</th>
+            <th class="tablehead">Email</th>
+        </thead>
+        <tr>
+          <td>1</td>
+          <td>Phaisn</td>
+          <td>65010710@kmitl.ac.th</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Phaisn</td>
+            <td>65010710@kmitl.ac.th</td>
+          </tr>
+        <tr>
+            <td>1</td>
+            <td>Phaisn</td>
+            <td>65010710@kmitl.ac.th</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Phaisn</td>
+            <td>65010710@kmitl.ac.th</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Phaisn</td>
+            <td>65010710@kmitl.ac.th</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Phaisn</td>
+            <td>65010710@kmitl.ac.th</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Phaisn</td>
+            <td>65010710@kmitl.ac.th</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Phaisn</td>
+            <td>65010710@kmitl.ac.th</td>
+        </tr>
+
+      </table>
+  </div>
+
+</div>
+
+<script>
+    var modal = document.getElementById("myModal");
+    
+    var btn = document.getElementById("myBtn");
+    
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    
+    
+</body>
+</html>

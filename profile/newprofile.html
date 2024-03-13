@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            min-height: 100vh;
+            background-color: rgb(173, 173, 173);
+            font-family: 'jura';
+        }
+        .sub-menu-wrap{  /* Corrected class name */
+            background-color: rgb(255, 255, 255);            
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            width: 320px;
+            z-index: 10;
+            max-height: 0px;
+            visibility: hidden;
+            transition: max-height 0.5s;
+        }
+        .sub-menu-wrap.open-menu{
+            max-height: 400px;
+        }
+        .sub-menu{
+            padding: 20px;
+            margin: 20px;
+        }
+        .user-info{
+            display:flex;
+            align-items: center;
+        }
+        .user-info img{
+            width: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border-style: solid;
+            border-color: black;
+        }
+        .sub-menu hr{
+            border: 0;
+            height: 1px;
+            width: 100%;
+            margin: 5% 0 5%;
+            background-color: black;
+        }
+        .sub-menu-link{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            margin: 12px 0;
+        }
+        .sub-menu-link p{
+            width: 100%;
+        }
+        .sub-menu-link:hover p{
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+    <button type="button" onclick="toggleProfile()">click this</button>
+    <nav>
+        <div class="sub-menu-wrap" id="subMeun"> <!-- Corrected class name -->
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5fn3dnW2e-71rHP5Xh8GGwpw_JpwsjTIAHX3yN_JGXA&s">
+                    <h1>Phasin</h1>
+                </div>
+                <hr>
+                <a class="sub-menu-link">
+                    <p>65010710@gmail.com</p>
+                </a>
+                <a class="sub-menu-link">
+                    <p>password : xxxxxx</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <script>
+        let subMenu = document.getElementsById("subMenu");
+        function toggleProfile(){
+            subMenu.ClassList.toggle("open-menu")
+        }
+    </script>
+</body>
+</html>

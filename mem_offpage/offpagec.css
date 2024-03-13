@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(146, 146, 146);
+    width: 100%;
+    height: 100%;
+    font-family: 'jura';
+}
+.head{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 900;
+    margin-top: 10%;
+}
+.body_mem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.eachmember {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    background-color: beige;
+    margin: 0.5%;
+    border-radius: 50px 0px 0px 50px;
+    border-style: solid;
+    border-color: black;
+}
+
+.eachmemberinfo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 2vw;
+}
+.eachmember:hover{
+    transition: 0.3s;
+    transform: translateX(-20px);
+}
+
+.nameinfo{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 2vw;
+}
+.numinfo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    background-color: wheat;
+    border-radius: 50px;
+    height: 100%;
+    width: 50%;
+    font-weight: 900;
+}
+.ptag{
+    margin:0;
+}

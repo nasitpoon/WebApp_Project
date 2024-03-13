@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="newpf.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Seek_Limited_logo.svg/1200px-Seek_Limited_logo.svg.png">
+        <div>
+            <a>Home</a>
+            <a>My Post</a>
+            <a>My Application</a>
+        </div>
+        <a onclick="toggleMenu()">Profile</a>
+    </nav>
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5fn3dnW2e-71rHP5Xh8GGwpw_JpwsjTIAHX3yN_JGXA&s">
+                    <h1>Phasin</h1>
+                </div>
+                <hr>
+                <a class="sub-menu-link">
+                    <p>65010710@gmail.com</p>
+                </a>
+                <a class="sub-menu-link">
+                    <p>password : xxxxxx</p>
+                </a>
+                <button class="tabutt" id="editBtn">Edit</button>
+            </div>
+        </div>
+    <div id="editModal" class="modaledit" style="display: none;">
+        <div class="modaledit-content">
+            <span class="editclose">×</span>
+            <h1>Edit profile</h1>
+            <form style="display: flex; flex-direction: column;">
+                <label for="Nnam">Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="Eema">Email:</label>
+                <input type="text" id="Eema" name="Eema"><br>
+                <label for="Cpass">Current Password:</label>
+                <input type="text" id="Cpass" name="Cpass"><br>
+                <label for="Npass">New Password:</label>
+                <input type="text" id="Npass" name="Npass"><br>
+                <label for="Conpass">Confirm Password:</label>
+                <input type="text" id="Conpass" name="Conpass"><br>
+                <input type="submit" value="Submit" class="tabutt">
+            </form> 
+        </div>      
+    </div>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+
+        var modal = document.getElementById("editModal");
+
+        var btn = document.getElementById("editBtn");
+
+        var span = document.getElementsByClassName("editclose")[0];
+
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
+</body>
+</html>
